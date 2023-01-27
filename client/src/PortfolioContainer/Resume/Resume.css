@@ -33,7 +33,7 @@
 }
 
 .resume-description-text {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .resume-details-carousal {
@@ -144,8 +144,14 @@
     margin-bottom: 20px;
 }
 
+.resume-sub-grade{
+      font-size: 13px;
+    text-align: justify;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
 .heading-date {
-  background-color: #ff5823;
+  background-color: black;
   padding: 4px 12px;
   font-size: 14px;
   border-radius: 14px;

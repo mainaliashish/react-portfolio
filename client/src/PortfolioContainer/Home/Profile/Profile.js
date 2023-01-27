@@ -10,20 +10,14 @@ export default function Profile() {
         <div className="profile-deatils">
           <div className="colz">
             <div className="colz-icon">
-              <a href="#">
-                <i className="fa fa-facebook-square"></i>
+              <a href="https://www.linkedin.com/in/mainaliashish/">
+                <i className="fa fa-brands fa-linkedin" />
               </a>
-              <a href="#">
-                <i className="fa fa-google-plus-square"></i>
+              <a href="mailto:mainaliashish@outlook.com">
+                <i className="fa fa-thin fa-envelope" />
               </a>
-              <a href="#">
-                <i className="fa fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i className="fa fa-youtube-square"></i>
-              </a>
-              <a href="#">
-                <i className="fa fa-twitter"></i>
+              <a href="https://twitter.com/mainaliashish">
+                <i className="fa fa-brands fa-github" />
               </a>
             </div>
           </div>
@@ -46,7 +40,7 @@ export default function Profile() {
                     2500,
                     "Data Science 📊",
                     2500,
-                    "Frontend Developer 🏡",
+                    "Backend Developer 🏡",
                     2500,
                   ]}
                 />

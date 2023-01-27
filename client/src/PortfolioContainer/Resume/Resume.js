@@ -41,6 +41,9 @@ const Resume = (props) => {
         <div className="resume-sub-heading">
           <span>{props.subHeading ? props.subHeading : ""}</span>
         </div>
+        <div className="resume-sub-grade">
+          <span>{props.grades ? props.grades : ""}</span>
+        </div>
         <div className="resume-heading-description">
           <span>{props.description ? props.description : ""}</span>
         </div>
@@ -52,7 +55,7 @@ const Resume = (props) => {
   const resumeBullets = [
     { label: "Education", logoSrc: education },
     { label: "Work History", logoSrc: work },
-    { label: "Programming Skills", logoSrc: programming },
+    { label: "Tools and Experience", logoSrc: programming },
     { label: "Projects", logoSrc: projects },
     { label: "Interests", logoSrc: interests },
   ];
@@ -65,93 +68,168 @@ const Resume = (props) => {
     { skill: "Ruby on Rails", ratingPercentage: 89 },
     { skill: "Node JS", ratingPercentage: 89 },
     { skill: "Javascript", ratingPercentage: 70 },
-    { skill: "Relational Database", ratingPercentage: 80 },
+    { skill: "MYSQL, Postgres", ratingPercentage: 80 },
     { skill: "HTML", ratingPercentage: 80 },
     { skill: "CSS", ratingPercentage: 80 },
+    { skill: "Python", ratingPercentage: 80 },
+    { skill: "Windows and Linux OS", ratingPercentage: 80 },
+    { skill: "Github, Gitlab", ratingPercentage: 80 },
+    { skill: "VScode", ratingPercentage: 80 },
+    { skill: "Django", ratingPercentage: 80 },
+    { skill: "Flutter", ratingPercentage: 80 },
+    { skill: "Bootstrap, MaterialUI", ratingPercentage: 80 },
   ];
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+      title: "Bug Tracker Application using Ruby on Rails",
+      duration: { projectDate: "2020" },
+      description: "A bug tracking application using Rails as backend",
+      subHeading: "Technologies Used: HTML, CSS, Javascript, Ruby on Rails",
     },
     {
-      title: "Mobile E-shop ",
+      title: "Education Consultancy Website",
+      duration: { projectDate: "2020" },
+      description: "An education consultancy website for a freelancing client.",
+      subHeading: "Technologies Used: HTML, CSS, Javascript, PHP, Laravel",
+    },
+    ,
+    {
+      title: "Research publication",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "An ecommerce application designed to sell products online wth payment system integration",
-      subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+        "A research paper published on title : 'Deep Learning-Based Methods for Sentiment Analysis on Nepali COVID-19-Related Tweets' working with a team of senior professors",
+      subHeading: "Technologies Used: Python, Machine Learning, Web Scrapping",
     },
     {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
-      subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+      title: "Construction Company Website",
+      duration: { fromDate: "2020" },
+      description: "A construction company website for a freelancing client.",
+      subHeading: "Technologies Used: HTML, CSS, Javascript, PHP, Laravel",
     },
   ];
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
-      <ResumeHeading
-        heading={"Purbanchal University, Nepal"}
-        subHeading={"BACHELOR OF INFORMATION TECHNOLOGY"}
-        fromDate={"2013"}
-        toDate={"2017"}
-      />
+      <ScrollArea
+        speed={0.8}
+        className="area"
+        contentClassName="content"
+        horizontal={false}
+      >
+        <ResumeHeading
+          heading={"Oxford Brookes University, UK"}
+          subHeading={"MSc. Artificial Intelligence"}
+          fromDate={"2022"}
+          toDate={"Present"}
+        />
+        <ResumeHeading
+          heading={"Purbanchal University, Nepal"}
+          subHeading={"BACHELOR OF INFORMATION TECHNOLOGY"}
+          grades={"Overall CGPA: 3.45/4.00"}
+          fromDate={"2013"}
+          toDate={"2018"}
+        />
 
-      <ResumeHeading
-        heading={"Higher Secondary Education"}
-        subHeading={"Siddhartha College"}
-        fromDate={"2011"}
-        toDate={"2013"}
-      />
-      <ResumeHeading
-        heading={"High School"}
-        subHeading={"Dhruba Tara Residential English Boarding School"}
-        fromDate={"1998"}
-        toDate={"2010"}
-      />
+        <ResumeHeading
+          heading={"Higher Secondary Education"}
+          subHeading={"Siddhartha College"}
+          fromDate={"2011"}
+          toDate={"2013"}
+        />
+        <ResumeHeading
+          heading={"High School"}
+          subHeading={"Dhruba Tara Residential English Boarding School"}
+          fromDate={"1998"}
+          toDate={"2010"}
+        />
+      </ScrollArea>
     </div>,
 
     /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
-      <div className="experience-container">
-        <ResumeHeading
-          heading={"Ehizeex Technoloy"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
-          fromDate={"2021"}
-          toDate={"Present"}
-        />
-        <div className="experience-description">
-          <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
-          </span>
+      <ScrollArea
+        speed={0.8}
+        className="area"
+        contentClassName="content"
+        horizontal={false}
+      >
+        <div className="experience-container">
+          <ResumeHeading
+            heading={"Bajra Technologies, Nepal"}
+            subHeading={"Associate Software Engineer"}
+            fromDate={"2022, January"}
+            toDate={"2022, September"}
+          />
+          <div className="experience-description">
+            <span className="resume-description-text">
+              - Developing features for the CompareByaaz website using Ruby on
+              Rails as a back-end language and HTML, SCSS and JavaScript as a
+              front-end language
+            </span>
+            <br />
+            <span className="resume-description-text">
+              - Fixing bugs and issues reported by the Quality Assurance (QA)
+              team
+            </span>
+            <br />
+            <span className="resume-description-text">
+              - Giving feedback on designs prepared by the UX/UI team
+            </span>
+            <br />
+            <span className="resume-description-text">
+              - Writing Unit Test cases for the project using RSpec.
+              Participating in developing and implementing solutions as required
+              by the project Giving feedback on designs prepared by the UX/UI
+              team
+            </span>
+            <br />
+            <span className="resume-description-text">
+              - Fixing issues with the Staging and Production servers
+            </span>
+            <br />
+          </div>
+          <br />
+          <br />
+          <br />
+          <div className="experience-container">
+            <ResumeHeading
+              heading={"Plutonic Tech, Nepal"}
+              subHeading={"Software Developer"}
+              fromDate={"2018, January"}
+              toDate={"2021, December"}
+            />
+            <div className="experience-description">
+              <span className="resume-description-text">
+                - Worked on PHP Laravel Framework as a backend web developer
+              </span>
+              <br />
+              <span className="resume-description-text">
+                - Collaborated with highly experienced team to develop
+                high-quality web applications and work on developing responsive
+                front-end solutions
+              </span>
+              <br />
+              <span className="resume-description-text">
+                - Direct interaction with clients for modifying existing and
+                adding new features
+              </span>
+              <br />
+              <span className="resume-description-text">
+                - Communicated and discussed with senior developers about best
+                UI/UX design practice
+              </span>
+              <br />
+              <span className="resume-description-text">
+                - Fixing issues with the Staging and Production servers
+              </span>
+              <br />
+            </div>
+          </div>
         </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
-          </span>
-          <br />
-        </div>
-      </div>
+        <br />
+        <br />
+      </ScrollArea>
     </div>,
 
     /* PROGRAMMING SKILLS */
@@ -163,28 +241,28 @@ const Resume = (props) => {
         <div className="skill-parent" key={index}>
           <div className="heading-bullet"></div>
           <span>{skill.skill}</span>
-          <div className="skill-percentage">
-            <div
-              style={{ width: skill.ratingPercentage + "%" }}
-              className="active-percentage-bar"
-            ></div>
-          </div>
         </div>
       ))}
     </div>,
 
     /* PROJECTS */
     <div className="resume-screen-container" key="projects">
-      {projectsDetails.map((projectsDetails, index) => (
-        <ResumeHeading
-          key={index}
-          heading={projectsDetails.title}
-          subHeading={projectsDetails.subHeading}
-          description={projectsDetails.description}
-          fromDate={projectsDetails.duration.fromDate}
-          toDate={projectsDetails.duration.toDate}
-        />
-      ))}
+      <ScrollArea
+        speed={0.8}
+        className="area"
+        contentClassName="content"
+        horizontal={false}
+      >
+        {projectsDetails.map((projectsDetails, index) => (
+          <ResumeHeading
+            key={index}
+            heading={projectsDetails.title}
+            subHeading={projectsDetails.subHeading}
+            description={projectsDetails.description}
+            projectDate={projectsDetails.duration.projectDate}
+          />
+        ))}
+      </ScrollArea>
     </div>,
 
     /* Interests */
@@ -195,31 +273,12 @@ const Resume = (props) => {
         contentClassName="content"
         horizontal={false}
       >
-      <ResumeHeading
-        heading="Teaching"
-        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
-      />
-      <ResumeHeading
-        heading="Music"
-        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
-      />
-      <ResumeHeading
-        heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
-      />
-      <ResumeHeading
-        heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
-      />
-      <ResumeHeading
-        heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
-      />
-      <ResumeHeading
-        heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
-        />
-    </ScrollArea>
+        <ResumeHeading heading="Volunteering and Social Work" description="" />
+        <ResumeHeading heading="Playing Sports" description="" />
+        <ResumeHeading heading="Cultural Exchanges" description="" />
+        <ResumeHeading heading="Music" description="" />
+        <ResumeHeading heading="Traveling" description="" />
+      </ScrollArea>
     </div>,
   ];
 
