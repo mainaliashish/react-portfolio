@@ -14,7 +14,7 @@ app.use(cors())
 app.use("/", contactRoute)
 
 if(process.env.NODE_ENV == 'production') {
-    app.use(express.static("/app"))
+    app.use(express.static("app"))
     app.get("*", (req, res) =>{
         res.sendFile(path.resolve(__dirname, "app/client/build/index.html"))
     })
