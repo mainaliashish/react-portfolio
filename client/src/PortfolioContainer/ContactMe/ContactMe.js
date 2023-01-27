@@ -7,7 +7,7 @@ import load1 from "../../assets/images/load2.gif";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
-import Footer from "../../PortfolioContainer/Footer/Footer";
+import Footer from "../Footer/Footer";
 import "./ContactMe.css";
 
 export default function ContactMe(props) {
