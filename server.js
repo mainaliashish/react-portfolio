@@ -16,7 +16,7 @@ app.use("/", contactRoute)
 if(process.env.NODE_ENV == 'production') {
     app.use(express.static("client/build"))
     app.get("*", (request, response) =>{
-        response.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+        response.sendFile(path.resolve(__dirname, "client", "public", "index.html"))
     })
 }
 
