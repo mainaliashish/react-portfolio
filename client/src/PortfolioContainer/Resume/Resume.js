@@ -66,6 +66,7 @@ const Resume = (props) => {
     { skill: "Laravel", ratingPercentage: 85 },
     { skill: "Ruby", ratingPercentage: 85 },
     { skill: "Ruby on Rails", ratingPercentage: 89 },
+    { skill: "Website Hosting", ratingPercentage: 89 },
     { skill: "Node JS", ratingPercentage: 89 },
     { skill: "Javascript", ratingPercentage: 70 },
     { skill: "MYSQL, Postgres", ratingPercentage: 80 },
@@ -78,6 +79,7 @@ const Resume = (props) => {
     { skill: "Django", ratingPercentage: 80 },
     { skill: "Flutter", ratingPercentage: 80 },
     { skill: "Bootstrap, MaterialUI", ratingPercentage: 80 },
+    { skill: "Docker", ratingPercentage: 80 },
   ];
 
   const projectsDetails = [
