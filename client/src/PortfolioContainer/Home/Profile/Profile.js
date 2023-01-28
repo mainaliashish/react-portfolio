@@ -46,8 +46,7 @@ export default function Profile() {
                 />
               </h1>
               <span className="profile-role-tagline">
-                Knack of building applications with front and back end
-                operations.
+                Highly motivated in Computer Science and programming.
               </span>
             </span>
           </div>
@@ -59,7 +58,7 @@ export default function Profile() {
               {""}
               Hire Me {""}
             </button>
-            <a href="ehizcv.pdf" download="Ashish Mainali.pdf">
+            <a href="app/client/build/ashish_mainali.pdf" download="Ashish Mainali.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
