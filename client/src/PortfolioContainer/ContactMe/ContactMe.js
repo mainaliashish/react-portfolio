@@ -70,6 +70,9 @@ export default function ContactMe(props) {
         <div className="col">
           <h2 className="title">
             <Typical loop={Infinity} steps={["Get In Touch 🇳🇵", 1000]} />
+            <h4>
+              mobile: <a href="tel:+44 07462872486">+44 07462872486</a>
+            </h4>
           </h2>{" "}
           <a href="https://www.linkedin.com/in/mainaliashish/">
             <i className="fa fa-brands fa-linkedin" />
@@ -80,6 +83,7 @@ export default function ContactMe(props) {
           <a href="https://twitter.com/mainaliashish">
             <i className="fa fa-brands fa-github" />
           </a>
+          <h3></h3>
         </div>
         <div className="back-form">
           <div className="img-back">
